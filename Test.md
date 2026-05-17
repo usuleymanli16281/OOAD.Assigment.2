@@ -39,3 +39,16 @@ The repository's default test command is:
 ```bash
 ./gradlew test
 ```
+
+On Windows:
+
+```powershell
+.\gradlew.bat test
+```
+
+If Windows shows a `JAVA_HOME is set to an invalid directory` error, set `JAVA_HOME` to the installed JDK path and run the tests again:
+
+```powershell
+$env:JAVA_HOME="C:\Program Files\Java\jdk-21.0.10"
+.\gradlew.bat test
+```
